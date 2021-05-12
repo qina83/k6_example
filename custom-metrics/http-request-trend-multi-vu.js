@@ -17,7 +17,7 @@ export default function () {
   const res = http.get('http://test.k6.io');
   trend.add(res.timings.duration);
   counter.add(1);
-  gauge.add(res.timings.duration);
+  gauge.add(res.body.length);
   rate.add(__VU % 2);
 
 }

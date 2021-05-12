@@ -38,6 +38,11 @@ http-request-complete:
 
 #------------------------------------------
 
+
+
+
+
+
 # custom metrics --------------------------
 
 #trend
@@ -52,9 +57,36 @@ http-request-trend-multi-vu:
 http-request-trend-check:
 	/opt/homebrew/bin/k6 run custom-metrics/http-request-trend-check.js
 
+#trend-multi-vu-threshold
+http-request-trend-threshold:
+	/opt/homebrew/bin/k6 run custom-metrics/http-request-trend-threshold.js
+
 #------------------------------------------
 
 
 
+# scenarios --------------------------
 
+#scenario
+scenario:
+	/opt/homebrew/bin/k6 run scenarios/scenario.js
 
+scenario-exec:
+	/opt/homebrew/bin/k6 run scenarios/scenario-exec.js
+
+scenario-exec-csv:
+	/opt/homebrew/bin/k6 run --out csv=result.csv scenarios/scenario-exec.js
+
+scenario-exec-json:
+	/opt/homebrew/bin/k6 run --out json=result.json scenarios/scenario-exec.js
+
+scenario-exec-html:
+	/opt/homebrew/bin/k6 run scenarios/scenario-exec-html.js
+
+scenario-exec-html-threshold:
+	/opt/homebrew/bin/k6 run scenarios/scenario-exec-html-threshold.js
+
+scenario-exec-html-complete:
+	/opt/homebrew/bin/k6 run scenarios/scenario-exec-html-complete.js
+
+#------------------------------------------

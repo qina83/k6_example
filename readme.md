@@ -18,16 +18,17 @@ X Env var
     
     
 
-- metriche custom
+X metriche custom
     X Trend
     X Rate
     X Counter
     X Gauge (?)
-    - Check
-    - Threshold
+    X Check
+    X Threshold
 
 - gruppi (?)
-- scenari
+- stage
+X scenari
 
 - ws - gain & pain
 
