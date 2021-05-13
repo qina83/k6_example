@@ -31,6 +31,10 @@ http-request-vu-iteration:
 http-request-options:
 	/opt/homebrew/bin/k6 run getting-start/http-request-options.js
 
+#iterazioni con opzioni
+http-request-options-stage:
+	/opt/homebrew/bin/k6 run getting-start/http-request-options-stage.js
+
 #lifecycle - vus - iteartion - env
 http-request-complete:
 	/opt/homebrew/bin/k6 run getting-start/http-request-complete.js --include-system-env-vars
