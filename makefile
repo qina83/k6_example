@@ -5,39 +5,39 @@ export
 
 #chiamata singola
 http-request:
-	/opt/homebrew/bin/k6 run getting-start/http-request.js
+	/opt/homebrew/bin/k6 run getting-started/http-request.js
 
 #chiamata singola con errore
 http-request-error:
-	/opt/homebrew/bin/k6 run getting-start/http-request-error.js
+	/opt/homebrew/bin/k6 run getting-started/http-request-error.js
 
 #lifecyle
 http-request-lifecycle:
-	/opt/homebrew/bin/k6 run getting-start/http-request-lifecycle.js
+	/opt/homebrew/bin/k6 run getting-started/http-request-lifecycle.js
 
 #iterazioni per un tempo stabilito
 http-request-duration:
-	/opt/homebrew/bin/k6 run --duration 10s getting-start/http-request.js
+	/opt/homebrew/bin/k6 run --duration 10s getting-started/http-request.js
 
 #iterazioni per un tempo stabilito con più VU
 http-request-vu-duration:
-	/opt/homebrew/bin/k6 run --vus 5 --duration 10s getting-start/http-request.js
+	/opt/homebrew/bin/k6 run --vus 5 --duration 10s getting-started/http-request.js
 
 #iterazioni per un numero stabilito con più VU
 http-request-vu-iteration:
-	/opt/homebrew/bin/k6 run --vus 5 --iterations 10 getting-start/http-request.js
+	/opt/homebrew/bin/k6 run --vus 5 --iterations 10 getting-started/http-request.js
 
 #iterazioni con opzioni
 http-request-options:
-	/opt/homebrew/bin/k6 run getting-start/http-request-options.js
+	/opt/homebrew/bin/k6 run getting-started/http-request-options.js
 
 #iterazioni con opzioni
 http-request-options-stage:
-	/opt/homebrew/bin/k6 run getting-start/http-request-options-stage.js
+	/opt/homebrew/bin/k6 run getting-started/http-request-options-stage.js
 
 #lifecycle - vus - iteartion - env
 http-request-complete:
-	/opt/homebrew/bin/k6 run getting-start/http-request-complete.js --include-system-env-vars
+	/opt/homebrew/bin/k6 run getting-started/http-request-complete.js --include-system-env-vars
 
 
 #------------------------------------------
