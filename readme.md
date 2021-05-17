@@ -27,13 +27,13 @@ X metriche custom
     X Threshold
 
 - gruppi (?)
-- stage
+X stage
 X scenari
 
 - ws - gain & pain
 
 - output
-    - csv
-    - json
-    - summary (html)
+    X csv
+    X json
+    X summary (html)
 

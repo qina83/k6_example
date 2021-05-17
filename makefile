@@ -94,3 +94,11 @@ scenario-exec-html-complete:
 	/opt/homebrew/bin/k6 run scenarios/scenario-exec-html-complete.js
 
 #------------------------------------------
+
+
+# ws --------------------------
+
+ws-test:
+	/opt/homebrew/bin/k6 run ws/ws.js
+
+#------------------------------------------
