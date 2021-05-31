@@ -5,7 +5,7 @@ export let options = {
         scenario_shared_iterations: {
             executor: 'shared-iterations',
             vus: 10,
-            iterations: 10,
+            iterations: 100,
         },
         // scenario_constant_arrival_rate: {
         //     executor: 'constant-arrival-rate',

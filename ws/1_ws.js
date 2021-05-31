@@ -7,7 +7,8 @@ let counter = new Counter('aCounter');
 
 export let options = {
     thresholds: {
-        aCounter: ['count>3'], 
+     // aCounter: ['count>3'], 
+      aCounter: ['count>3'], 
     },
   };
   

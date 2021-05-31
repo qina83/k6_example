@@ -1,5 +1,6 @@
 import http from 'k6/http';
-import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
+//import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
+import { htmlReport } from "../k6-reporter/dist/bundle.js";
 import { textSummary } from "https://jslib.k6.io/k6-summary/0.0.1/index.js";
 
 export function handleSummary(data) {
@@ -39,18 +40,12 @@ export let options = {
     }
 }
 
-for (let key in options.scenarios) {
-    // Each scenario automaticall tags the metrics it generates with its own name
-    let thresholdName = `http_req_duration{scenario:${key}}`;
-    // Check to prevent us from overwriting a threshold that already exists
-    if (!options.thresholds[thresholdName]) {
-        options.thresholds[thresholdName] = [];
-    }
-    // 'max>=0' is a bogus condition that will always be fulfilled
-    //options.thresholds[thresholdName].push('max>=0');
-    options.thresholds[thresholdName].push('avg < 150');
-    options.thresholds[thresholdName].push('max < 1500');
-}
+options.thresholds[`http_req_duration{scenario:scenario_callK6}`] = ['avg < 150', 'max < 1500'];
+options.thresholds[`http_req_duration{scenario:scenario_callGoogle_1}`] = ['avg < 100', 'max < 1500'];
+options.thresholds[`http_req_duration{scenario:scenario_callGoogle_2}`] = ['avg < 200', 'max < 1500'];
+
+
+
 
 export function callK6() {
     const res = http.get('http://test.k6.io');

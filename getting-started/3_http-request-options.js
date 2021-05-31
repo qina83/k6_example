@@ -3,7 +3,7 @@ import http from 'k6/http';
 export let options = {
   vus: 5,
   //duration: '10s'
-  iterations: 10
+  iterations: 20
 };
 
 export default function () {

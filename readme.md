@@ -1,32 +1,8 @@
+#Riferimenti
 
-#https://k6.io
-#https://k6.io/docs/using-k6/metrics/
+https://k6.io/
 
-#Getting started
- - singola richiesta
- - singola richiesta con errore
- - life cycle
- - gestire le iterazioni
-    - duration
-    - vu
-    - iteration
-    - options
-    - __VU __ITER
-- Env var
-        
-#Custom metrics
-- metriche custom
-    - Trend
-    - Rate
-    - Counter
-    - Gauge
-    - Check
-    - Threshold
-
-X stage
-X scenari
-
-- ws
-
-
+#Installazione
+https://k6.io/docs/getting-started/installation/
+$ brew install k6
 

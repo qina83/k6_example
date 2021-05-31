@@ -11,6 +11,11 @@ export let options = {
   vus: 5,
   //duration: '10s'
   iterations: 10,
+  thresholds: {
+    http_req_duration: ['p(95)<550'], // 95% of requests should be below 550ms
+    aRate: ['rate > 0.5'],
+    aGauge: ['value < 4000'],
+  },
 };
 
 export default function () {

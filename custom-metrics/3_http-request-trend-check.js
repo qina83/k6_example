@@ -10,13 +10,12 @@ let rate = new Rate('aRate');
 export let options = {
   vus: 5,
   //duration: '10s'
-  iterations: 10,
-  thresholds: {
-    http_req_duration: ['p(95)<550'], // 95% of requests should be below 550ms
-    //aRate: ['rate > 0.5'],
-   // aGauge: ['value<4000'],
-  },
+  iterations: 100,
 };
+
+export function setup(){
+  http.get('http://test.k6.io/mario');
+}
 
 export default function () {
   const res = http.get('http://test.k6.io');
@@ -27,7 +26,7 @@ export default function () {
   check(res, {
     'is status 200': (r) => r.status === 200,
   });
-  check(res, {
-    'is status 400': (r) => r.status === 400,
-  });
+  // check(res, {
+  //   'is status  400': (r) => r.status === 400,
+  // });
 }

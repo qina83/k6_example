@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/benc-uk/k6-reporter/main/assets/icon.png" type="image/png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>K6 Load Test: 2021-05-31 13:44</title>
+    <title>K6 Load Test: 2021-05-27 10:37</title>
     <style>
       body {
         margin: 1rem;
@@ -138,14 +138,14 @@
   <body>
     <h1>
       <svg style="vertical-align:middle" width="50" height="45" viewBox="0 0 50 45" fill="none" class="footer-module--logo--_lkxx"><path d="M31.968 34.681a2.007 2.007 0 002.011-2.003c0-1.106-.9-2.003-2.011-2.003a2.007 2.007 0 00-2.012 2.003c0 1.106.9 2.003 2.012 2.003z" fill="#7D64FF"></path><path d="M39.575 0L27.154 16.883 16.729 9.31 0 45h50L39.575 0zM23.663 37.17l-2.97-4.072v4.072h-2.751V22.038l2.75 1.989v7.66l3.659-5.014 2.086 1.51-3.071 4.21 3.486 4.776h-3.189v.001zm8.305.17c-2.586 0-4.681-2.088-4.681-4.662 0-1.025.332-1.972.896-2.743l4.695-6.435 2.086 1.51-2.239 3.07a4.667 4.667 0 013.924 4.6c0 2.572-2.095 4.66-4.681 4.66z" fill="#7D64FF"></path></svg> 
-      &nbsp; K6 Load Test: 2021-05-31 13:44
+      &nbsp; K6 Load Test: 2021-05-27 10:37
     </h1>
 
     <div class="row">
       <div class="box">
         <i class="fas fa-globe icon"></i>
         <h4>Total Requests</h4>
-        <div class="bignum">30</div>
+        <div class="bignum">429</div>
       </div>
       <div class="box ">
         <i class="far fa-times-circle icon"></i>
@@ -183,50 +183,162 @@
         </thead>
         
         <tr>
-          <td><b>http_req_duration{scenario:scenario_callGoogle_1}</b></td>
+          <td><b>http_req_duration{scenario:getAuthToken_primeOfferte250_rate_1_al_sec}</b></td>
           
-            <td>128.88</td>
+            <td>1010.36</td>
           
-            <td>126.20</td>
+            <td>855.30</td>
           
-            <td>134.64</td>
+            <td>1943.39</td>
           
           
-            <td class=" failed ">avg &lt; 100</td>
+            <td class=" good ">max &lt; 10000</td>
+          
+            <td class=" good ">avg &lt; 10000</td>
+          
+        </tr>
+  
+        <tr>
+          <td><b>http_req_duration{scenario:getAuthToken_primeOfferte250_rate_2_al_sec}</b></td>
+          
+            <td>1328.77</td>
+          
+            <td>998.25</td>
+          
+            <td>2007.86</td>
+          
+          
+            <td class=" good ">avg &lt; 10000</td>
+          
+            <td class=" good ">max &lt; 10000</td>
+          
+        </tr>
+  
+        <tr>
+          <td><b>http_req_duration{scenario:getAuthToken_primeOfferte250_rate_3_al_sec}</b></td>
+          
+            <td>8543.70</td>
+          
+            <td>1742.69</td>
+          
+            <td>13787.57</td>
+          
+          
+            <td class=" failed ">max &lt; 10000</td>
+          
+            <td class=" good ">avg &lt; 10000</td>
+          
+        </tr>
+  
+        <tr>
+          <td><b>http_req_duration{scenario:getOffers_10PrimeOfferte_newAPI_10aste}</b></td>
+          
+            <td>770.66</td>
+          
+            <td>336.95</td>
+          
+            <td>1261.23</td>
+          
+          
+            <td class=" good ">avg &lt; 1000</td>
           
             <td class=" good ">max &lt; 1500</td>
           
         </tr>
   
         <tr>
-          <td><b>http_req_duration{scenario:scenario_callGoogle_2}</b></td>
+          <td><b>http_req_duration{scenario:getOffers_10PrimeOfferte_newAPI}</b></td>
           
-            <td>137.74</td>
+            <td>466.31</td>
           
-            <td>129.65</td>
+            <td>465.71</td>
           
-            <td>151.08</td>
+            <td>466.90</td>
           
           
-            <td class=" good ">avg &lt; 200</td>
+            <td class=" good ">avg &lt; 1000</td>
           
             <td class=" good ">max &lt; 1500</td>
           
         </tr>
   
         <tr>
-          <td><b>http_req_duration{scenario:scenario_callK6}</b></td>
+          <td><b>http_req_duration{scenario:getOffers_150PrimeOfferte_newAPI_10aste}</b></td>
           
-            <td>132.53</td>
+            <td>652.85</td>
           
-            <td>127.90</td>
+            <td>373.37</td>
           
-            <td>136.97</td>
+            <td>906.11</td>
           
+          
+            <td class=" good ">avg &lt; 1000</td>
           
             <td class=" good ">max &lt; 1500</td>
           
-            <td class=" good ">avg &lt; 150</td>
+        </tr>
+  
+        <tr>
+          <td><b>http_req_duration{scenario:getOffers_150PrimeOfferte_newAPI}</b></td>
+          
+            <td>357.89</td>
+          
+            <td>357.89</td>
+          
+            <td>357.89</td>
+          
+          
+            <td class=" good ">avg &lt; 1000</td>
+          
+            <td class=" good ">max &lt; 1500</td>
+          
+        </tr>
+  
+        <tr>
+          <td><b>http_req_duration{scenario:getOffers_250PrimeOfferte_newAPI_10aste}</b></td>
+          
+            <td>808.56</td>
+          
+            <td>376.64</td>
+          
+            <td>1252.83</td>
+          
+          
+            <td class=" good ">avg &lt; 1000</td>
+          
+            <td class=" good ">max &lt; 1500</td>
+          
+        </tr>
+  
+        <tr>
+          <td><b>http_req_duration{scenario:getOffers_250PrimeOfferte_newAPI}</b></td>
+          
+            <td>407.94</td>
+          
+            <td>407.94</td>
+          
+            <td>407.94</td>
+          
+          
+            <td class=" good ">avg &lt; 1000</td>
+          
+            <td class=" good ">max &lt; 1500</td>
+          
+        </tr>
+  
+        <tr>
+          <td><b>http_req_duration{scenario:offertaInRoomScenarios}</b></td>
+          
+            <td>1560.58</td>
+          
+            <td>1323.62</td>
+          
+            <td>2311.82</td>
+          
+          
+            <td class=" good ">avg &lt; 2000</td>
+          
+            <td class=" good ">max &lt; 2500</td>
           
         </tr>
   
