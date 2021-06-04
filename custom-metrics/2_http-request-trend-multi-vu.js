@@ -13,7 +13,7 @@ export let options = {
 };
 
 export function setup(){
-  const res =http.get('https://jsonplaceholder.typicode.com/photos');
+  http.get('https://jsonplaceholder.typicode.com/photos');
 }
 
 export default function () {

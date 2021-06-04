@@ -14,7 +14,7 @@ export let options = {
 };
 
 export function setup(){
-  http.get('http://test.k6.io/mario');
+  const res =   http.get('http://test.k6.io/mario');
 }
 
 export default function () {
@@ -26,7 +26,4 @@ export default function () {
   check(res, {
     'is status 200': (r) => r.status === 200,
   });
-  // check(res, {
-  //   'is status  400': (r) => r.status === 400,
-  // });
 }
